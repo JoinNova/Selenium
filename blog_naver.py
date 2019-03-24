@@ -3,7 +3,8 @@ from selenium import webdriver
 from random import *
 from selenium import webdriver
 
-#k=-1
+key=-1
+k=-1
 while 1:
     try:
         browser = webdriver.Chrome(executable_path = '/Users/nova/git/chromedriver')
@@ -20,30 +21,31 @@ while 1:
                 path=['//*[@id="sp_blog_1"]/dl/dt/a','//*[@id="sp_blog_3"]/dl/dt/a','//*[@id="sp_blog_3"]/dl/dt/a'][key]
             elif way==1 or way==2 or way==3:
                 key=randint(0,19)
+                #key+=1
                 sr=['정보처리기사 실기 정렬','정보처리기사 실기 버블정렬','정보처리기사 실기 급여계산','정보처리기사 실기 재고관리','정보처리기사 실기 통계산출',
                     '정보처리기사 실기 최소비용','정보처리기사 실기 이분탐색','정보처리기사 실기 병합정렬','정보처리기사 실기 퀵정렬','정보처리기사 실기 석차구하기',
                     '정보처리기사 실기 배열','정보처리기사 실기 행렬','정보처리기사 실기 마름모','정보처리기사 실기 달팽이','정보처리기사 실기 패리티',
                     '정보처리기사 실기 BCD','정보처리기사 실기 2진수','정보처리기사 실기 16진수','정보처리기사 실기 1의보수','정보처리기사 실기 최대공약수'][key]
-                path=['//*[@id="sp_blog_2"]/dl/dt/a',#01
-                      '//*[@id="sp_blog_2"]/dl/dt/a',#02
-                      '//*[@id="sp_blog_1"]/dl/dt/a'#03
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#04
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#05
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#06
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#07
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#08
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#09
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#10
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#11
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#12
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#13
-                      '//*[@id="sp_blog_2"]/dl/dt/a',#14
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#15
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#16
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#17
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#18
-                      '//*[@id="sp_blog_2"]/dl/dt/a',#19
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#20
+                path=['//*[@id="sp_blog_2"]/dl/dt/a',#01 정렬
+                      '//*[@id="sp_blog_2"]/dl/dt/a',#02 버블정렬
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#03 급여계싼
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#04재고관리
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#05통계산출
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#06최소비용
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#07이분탐색
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#08병합정렬
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#09퀵정렬
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#10석차구하기
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#11배열
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#12행렬
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#13마름모#######
+                      '//*[@id="sp_blog_2"]/dl/dt/a',#14달팽이#####
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#15패리티
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#16BCD
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#172진수
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#1816진수^^^
+                      '//*[@id="sp_blog_2"]/dl/dt/a',#191의보수
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#20최대공약수
                       ''][key]
             else:
                 k=randint(0,79)
@@ -145,7 +147,7 @@ while 1:
                       '//*[@id="sp_blog_5"]/dl/dt/a',#79별 #######
                       '//*[@id="web_layer_0"]/dl/dt/a',#80are
                       ''][k]
-            #print(k,sr,'\n',path)
+            print(k,key,sr,'\n',path)
             #sleep(uniform(0.5, 1.2))
             browser.find_element_by_xpath(path).click()
             sleep(uniform(0.5, 1.2))
