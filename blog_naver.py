@@ -17,8 +17,8 @@ while 1:
             way=randint(0,5)
             if way==0:
                 key=randint(0,2)
-                sr=['정보처리기사 합격자 문제지','1901회 리눅스마스터 2급 2차','1901회 리눅스마스터 2급 2차'][key]
-                path=['//*[@id="sp_blog_1"]/dl/dt/a','//*[@id="sp_blog_3"]/dl/dt/a','//*[@id="sp_blog_3"]/dl/dt/a'][key]
+                sr=['정보처리기사 합격자 문제지','리눅스마스터 2급 2차 A형','리눅스마스터 2급 2차 A형'][key]
+                path=['//*[@id="web_layer_0"]/dl/dt/a','//*[@id="sp_blog_3"]/dl/dt/a','//*[@id="sp_blog_3"]/dl/dt/a'][key]
             elif way==1 or way==2 or way==3:
                 key=randint(0,19)
                 #key+=1
@@ -36,16 +36,16 @@ while 1:
                       '//*[@id="sp_blog_1"]/dl/dt/a',#08병합정렬
                       '//*[@id="sp_blog_1"]/dl/dt/a',#09퀵정렬
                       '//*[@id="sp_blog_1"]/dl/dt/a',#10석차구하기
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#11배열
+                      '//*[@id="sp_blog_2"]/dl/dt/a',#11배열######
                       '//*[@id="sp_blog_1"]/dl/dt/a',#12행렬
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#13마름모#######
-                      '//*[@id="sp_blog_2"]/dl/dt/a',#14달팽이#####
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#13마름모
+                      '//*[@id="sp_blog_2"]/dl/dt/a',#14달팽이
                       '//*[@id="sp_blog_1"]/dl/dt/a',#15패리티
                       '//*[@id="sp_blog_1"]/dl/dt/a',#16BCD
                       '//*[@id="sp_blog_1"]/dl/dt/a',#172진수
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#1816진수^^^
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#1816진수
                       '//*[@id="sp_blog_2"]/dl/dt/a',#191의보수
-                      '//*[@id="sp_blog_1"]/dl/dt/a',#20최대공약수
+                      '//*[@id="sp_blog_2"]/dl/dt/a',#20최대공약수###
                       ''][key]
             else:
                 k=randint(0,79)
@@ -54,7 +54,7 @@ while 1:
                                  '타일링','피터팬','Z','청기','만취한','gcd','탈출','역배치','스테판','한조',
                                  'key','부분합','숨바꼭질','dslr','팰린드롬','수묶기','회의실배정','부분문자열','contest','시간초과',
                                  '탑','쇠막대기','엄청난','정렬','중복','좌표','수정렬','주사위 boj','개수세기','스타트링크',
-                                 '줄세우기 boj','문자열폭발','군계일학','소수','이상한기호','casio','babba','01','돌게임 boj','랜덤',
+                                 '줄세우기 boj','문자열폭발','군계일학','소수 boj','이상한기호','casio','babba','01','돌게임 boj','랜덤',
                                  '삼각형','카카오','상금','sort','밑줄','부분수열','부분집합','시험','2차원','보물',
                                  '암호 boj','이상한','연세대학교','신용카드','입실','나머지합','피보나치','factorial','계단 boj','description',
                                  '동전 boj','암호제작','adding','공백','암호코드','버블 boj','이진트리','winning','별','are'][k]
@@ -66,7 +66,7 @@ while 1:
             #elem_login.send_keys(PW)
             sleep(uniform(0.5, 1.2))
             if way==4 or way==5:
-                path=['//*[@id="web_layer_1"]/dl/dt/a',#01난제
+                path=['//*[@id="web_layer_2"]/dl/dt/a',#01난제###
                       '//*[@id="sp_blog_1"]/dl/dt/a',#02행운의편지
                       '//*[@id="web_layer_0"]/dl/dt/a',#03if boj
                       '//*[@id="web_layer_0"]/dl/dt/a',#04비슷한단어
@@ -80,7 +80,7 @@ while 1:
                       '//*[@id="web_layer_0"]/dl/dt/a',#12'피터팬',
                       '//*[@id="sp_blog_4"]/dl/dt/a',#13'Z'
                       '//*[@id="sp_blog_1"]/dl/dt/a',#14'청기','
-                      '//*[@id="web_layer_1"]/dl/dt/a',#15만취한',
+                      '//*[@id="web_layer_0"]/dl/dt/a',#15만취한',####
                       '//*[@id="sp_blog_1"]/dl/dt/a',#16'gcd','
                       '//*[@id="sp_blog_4"]/dl/dt/a',#17탈출','
                       '//*[@id="web_layer_0"]/dl/dt/a',#18역배치',
@@ -96,20 +96,20 @@ while 1:
                       '//*[@id="web_layer_0"]/dl/dt/a',#28,'부분문자열',
                       '//*[@id="web_layer_0"]/dl/dt/a',#29'contest'
                       '//*[@id="web_layer_0"]/dl/dt/a',#30,'시간초과',
-                      '//*[@id="web_layer_1"]/dl/dt/a',#31탑',
-                      '//*[@id="sp_blog_2"]/dl/dt/a',#32'쇠막대기'
-                      '//*[@id="web_layer_1"]/dl/dt/a',#33,'엄청난'
-                      '//*[@id="sp_blog_4"]/dl/dt/a',#34,'정렬',##########
+                      '//*[@id="web_layer_0"]/dl/dt/a',#31탑',###
+                      '//*[@id="sp_blog_4"]/dl/dt/a',#32'쇠막대기'###
+                      '//*[@id="web_layer_0"]/dl/dt/a',#33,'엄청난'###
+                      '//*[@id="sp_blog_4"]/dl/dt/a',#34,'정렬',
                       '//*[@id="web_layer_0"]/dl/dt/a',#35'중복'
                       '//*[@id="sp_blog_5"]/dl/dt/a',#36,'좌표',
                       '//*[@id="sp_blog_2"]/dl/dt/a',#37'수정렬',
                       '//*[@id="sp_blog_1"]/dl/dt/a',#38'주사위 boj','
                       '//*[@id="web_layer_0"]/dl/dt/a',#39개수세기',
                       '//*[@id="sp_blog_1"]/dl/dt/a',#40'스타트링크',
-                      '//*[@id="web_layer_0"]/dl/dt/a',#41'줄세우기',############
+                      '//*[@id="web_layer_0"]/dl/dt/a',#41'줄세우기',
                       '//*[@id="web_layer_2"]/dl/dt/a',#42'문자열폭발'
                       '//*[@id="sp_blog_1"]/dl/dt/a',#43,'군계일학',
-                      '//*[@id="sp_blog_5"]/dl/dt/a',#44'소수'
+                      '//*[@id="web_layer_0"]/dl/dt/a',#44'소수boj'###
                       '//*[@id="web_layer_0"]/dl/dt/a',#45,'이상한기호',
                       '//*[@id="sp_blog_1"]/dl/dt/a',#46'casio'
                       '//*[@id="sp_blog_1"]/dl/dt/a',#47,'babba'
@@ -121,8 +121,8 @@ while 1:
                       '//*[@id="web_layer_0"]/dl/dt/a',#53,'상금',
                       '//*[@id="sp_blog_2"]/dl/dt/a',#54'sort',
                       '//*[@id="web_layer_0"]/dl/dt/a',#55'밑줄'
-                      '//*[@id="sp_blog_2"]/dl/dt/a',#56,'부분수열'
-                      '//*[@id="sp_blog_3"]/dl/dt/a',#57,'부분집합',
+                      '//*[@id="sp_blog_3"]/dl/dt/a',#56,'부분수열'###
+                      '//*[@id="sp_blog_4"]/dl/dt/a',#57,'부분집합',###
                       '//*[@id="sp_blog_3"]/dl/dt/a',#58'시험'
                       '//*[@id="sp_blog_3"]/dl/dt/a',#59,'2차원',
                       '//*[@id="sp_blog_3"]/dl/dt/a',#60'보물
@@ -132,7 +132,7 @@ while 1:
                       '//*[@id="sp_blog_1"]/dl/dt/a',#64'신용카드'
                       '//*[@id="web_layer_0"]/dl/dt/a',#65,'입실'
                       '//*[@id="web_layer_0"]/dl/dt/a',#66 나머지합
-                      '//*[@id="sp_blog_4"]/dl/dt/a',#67피보나치
+                      '//*[@id="sp_blog_5"]/dl/dt/a',#67피보나치###
                       '//*[@id="sp_blog_1"]/dl/dt/a',#68factorial
                       '//*[@id="web_layer_0"]/dl/dt/a',#69계단 boj
                       '//*[@id="web_layer_0"]/dl/dt/a',#70description
@@ -144,7 +144,7 @@ while 1:
                       '//*[@id="web_layer_0"]/dl/dt/a',#76 버블 boj
                       '//*[@id="sp_blog_1"]/dl/dt/a',#77이진트리
                       '//*[@id="sp_blog_1"]/dl/dt/a',#78winning
-                      '//*[@id="sp_blog_5"]/dl/dt/a',#79별 #######
+                      '//*[@id="sp_blog_1"]/dl/dt/a',#79별###
                       '//*[@id="web_layer_0"]/dl/dt/a',#80are
                       ''][k]
             print(k,key,sr,'\n',path)
